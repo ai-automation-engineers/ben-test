@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben – OnlineSteuern.de</title>
+</head>
+<body>
+    <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;font-family:'Inter',sans-serif;background:#f5f7fa;text-align:center;padding:20px;">
+        <div>
+            <h1 style="font-size:24px;color:#1a2332;margin-bottom:8px;">Ben – KI-Steuerbot</h1>
+            <p style="font-size:16px;color:#6b7280;">Testumgebung für OnlineSteuern.de</p>
+            <p style="font-size:14px;color:#9ca3af;margin-top:4px;">Chat-Widget unten rechts öffnen →</p>
+        </div>
+    </div>
+    <script>
+        window.ChatWidgetConfig = {
+            webhook: {
+                url: 'https://automations.hub-onlinesteuern.de/webhook/cd3201ff-c481-4db5-b567-45a4fdf7c7f8/chat',
+                route: 'general'
+            },
+            branding: {
+                botName: 'Ben',
+                botStatus: 'Online',
+                botAvatar: 'https://mjviczrc2l.ufs.sh/f/XBdENTNedez2NL2ygGzfnJbkjlhq6MotE9pL7uazPidU1e0F',
+                showBotAvatar: true,
+                welcomeTitle: 'Hallo, ich bin Ben 👋',
+                welcomeSubtitle: 'Ihr persönlicher KI-Steuerbot von Onlinesteuern.de',
+                welcomeQuestion: 'Wie kann ich Ihnen helfen?',
+                welcomeButtonText: 'Chat starten',
+                inputPlaceholder: 'Nachricht senden',
+                showFooter: false
+            },
+            initialMessage: {
+                enabled: true,
+                delay: 500,
+                message: 'Herzlich willkommen bei OnlineSteuern! 👋\nMein Name ist Ben.\n\nIch bin Ihr digitaler Assistent und helfe Ihnen gerne bei allen Fragen rund um unsere Buchhaltungs- und Steuerberatungsservices.\n\nWie darf ich Ihnen weiterhelfen?\n\n[📋 Leistungen & Pakete] = [Welche Leistungen bietet OnlineSteuern an?]\n[📅 Kostenloses Beratungsgespräch] = [Ich möchte ein kostenloses Beratungsgespräch buchen]\n[💰 Preise & Kosten] = [Was kostet die Buchhaltung bei OnlineSteuern?]\n[📚 Merkblätter & Vorlagen] = [Welche kostenlosen Merkblätter und Vorlagen gibt es?]\n[❓ Frage zur Buchhaltung / Steuern] = [Ich habe eine allgemeine Frage zu Steuern oder Buchhaltung]\n[📧 Kontakt aufnehmen] = [Ich möchte Kontakt aufnehmen]\n[🔐 Ich bin bereits Mandant] = [Ich bin schon Kunde und suche das Mandantenportal]'
+            },
+            portalButton: {
+                enabled: true,
+                text: 'Zum Mandantenportal',
+                actionText: 'Öffnen',
+                url: 'https://ben.onlinesteuern.de',
+                openInNewTab: true
+            }
+        };
+    </script>
+    <script src="widget.js"></script>
+</body>
+</html>
